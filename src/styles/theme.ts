@@ -11,9 +11,8 @@ export const theme = extendTheme({
                 boxSizing: 'border-box',
             },
             h1: {
-                fontSize: ['2.75rem', '3rem', '3.5rem'],
+                fontSize: ['2.25rem', '2.75rem', '3rem'],
                 fontWeight: '800',
-                lineHeight: '64px'
             },
             h2: {
                 fontSize: ['1.95rem', '2.2rem', '2.6rem'],

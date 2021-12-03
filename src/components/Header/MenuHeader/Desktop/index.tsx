@@ -24,7 +24,7 @@ export default function Desktop() {
                         bg: 'black',
                         color: 'white'
                     }}
-
+                    fontSize={[null,null,'0.75rem',null,'1rem']}
                 >
                     EDUCAÇÃO
                 </MenuButton>
@@ -109,6 +109,7 @@ export default function Desktop() {
                         bg: 'gray.900',
                         color: 'gray.50'
                     }}
+                    fontSize={[null,null,'0.75rem',null,'1rem']}
                 >
                     CONTEÚDO
                 </MenuButton>
@@ -134,6 +135,7 @@ export default function Desktop() {
                         bg: 'gray.900',
                         color: 'gray.50'
                     }}
+                    fontSize={[null,null,'0.75rem',null,'1rem']}
                 >
                     PARCERIAS
                 </MenuButton>
@@ -160,6 +162,7 @@ export default function Desktop() {
                         bg: 'gray.900',
                         color: 'gray.50'
                     }}
+                    fontSize={[null,null,'0.75rem',null,'1rem']}
                 >
                     MOVIMENTOS
                 </MenuButton>
@@ -186,6 +189,7 @@ export default function Desktop() {
                         bg: 'gray.900',
                         color: 'gray.50'
                     }}
+                    fontSize={[null,null,'0.75rem',null,'1rem']}
                 >
                     SOBRE
                 </MenuButton>
@@ -212,6 +216,7 @@ export default function Desktop() {
                         bg: 'gray.900',
                         color: 'gray.50'
                     }}
+                    fontSize={[null,null,'0.75rem',null,'1rem']}
                 >
                     CONTATO
                 </MenuButton>

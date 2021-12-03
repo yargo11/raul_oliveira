@@ -1,6 +1,10 @@
 import { Flex, Box, Text, Link, VStack, Square, Stack, HStack, SimpleGrid, AspectRatio, Button, Spacer, Avatar, Circle, Image, Icon } from '@chakra-ui/react'
 import { FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa'
+import ComoPossoTeAjudar from '../components/HomeComponents/ComoPossoTeAjudar'
+import ConhecaMeusLivros from '../components/HomeComponents/ConhecaMeusLivros'
 import IntroBanner from '../components/HomeComponents/IntroBanner'
+import MinhaHistoria from '../components/HomeComponents/MinhaHistoria'
+import Perspectiva from '../components/HomeComponents/Perspectiva'
 
 
 
@@ -18,127 +22,20 @@ export default function Home() {
         </VStack>
       </Flex>
 
-      <Flex w='full' pt='75px' justify='center' align='center' bg='#fff'>
-        <Text color='#333333' w='730px' textAlign='center'>
-          Empreendedor, apaixonado por vendas, marketing e varejo. Soares hoje é sócio e vice-presidente institucional da VTEX, co-fundador e mentor do Gestão 4.0, investidor anjo em mais de 25 startups, palestrante e autor dos best-sellers Bora Vender e Bora Varejo.
-        </Text>
-      </Flex>
-      <Flex w='full' pt='75px' justify='center' align='center' bg='#fff' direction='column'>
-        <Text as='h1' color='#333333' textAlign='center'>VEJA COMO EU POSSO TE AJUDAR</Text>
-        <Text as='h5' color='#333333' textAlign='center'>EXPLORE MEUS CONTEÚDOS PARA PODER ALAVANCAR SUA CARREIRA OU SEU NEGÓCIO</Text>
-      </Flex>
-      <Flex maxW='1120px' w='100%' pb='75px' px='10px' m='auto' wrap='wrap' justify='space-between' >
-        <SimpleGrid minChildWidth='353px' spacing='10px' w='full'>
-          <Square h='235px' bg='pink.300' />
-          <Square h='235px' bg='pink.300' />
-          <Square h='235px' bg='pink.300' />
-          <Square h='235px' bg='pink.300' />
-          <Square h='235px' bg='pink.300' />
-          <Square h='235px' bg='pink.300' />
-        </SimpleGrid>
-      </Flex>
-      <Box w='full' bg='#f3f3f3'>
-        <Flex maxW='1120px' w='100%' py='75px' px='10px' m='auto' direction='column' align='center'>
-          <Text as='h1'>MINHA HISTÓRIA</Text>
-          <Text as='h5'>EMPREENDEDOR CARIOCA APAIXONADO POR VENDAS, MARKETING E VAREJO</Text>
+      <ComoPossoTeAjudar />
 
-          <Stack direction={['column', 'row']} w='full' pt='45px'>
-            <AspectRatio maxW='560px' w='100%' h='323px' ratio={1}>
-              <iframe
-                title='naruto'
-                src='https://www.youtube.com/embed/QhBnZ6NPOY0'
-                allowFullScreen
-              />
-            </AspectRatio>
-            <VStack align='left' py={8} px={4} maxW='560px'>
-              <Text fontWeight='bold' as='h4'>DE VENDEDOR DE CARTÃO DE VISITAS A BILHÕES DE REAIS EM TRANSAÇÕES ONLINE</Text>
-              <Spacer />
-              <Text as='h5'>Assista o documentário gravado pela Bubas Video narrando a história da jornada do empreendedor Alfredo Soares, do início à depressão até a venda da sua startup Xtech Commerce para a gigante VTEX.</Text>
-              <Spacer />
-              <Button fontSize='12px' w='145px' h='62px' borderRadius='unset' bg='black' color='#fff' _hover={{ bg: '#BF2244' }}>ASSISTA O VÍDEO</Button>
-            </VStack>
-          </Stack>
+      <MinhaHistoria />
 
-          <Stack direction={['column', 'row']} w='full' pt='45px'>
-            <VStack align='left' py={8} px={4} maxW='560px'>
-              <Text fontWeight='bold' as='h4'>MUITO ALÉM DO IPO DA VTEX NA NYSE, O DIA QUE FOI O MARCO PARA UMA REGIÃO.</Text>
-              <Spacer />
-              <Text as='h5'>Gravado pela Trinta Dezessete durante a reta final para o IPO da VTEX na NYSE, o documentário mostra a perspectiva contada por Alfredo Soares de um sonho muito além da imaginação mas um comprometimento com um futuro declarado pelos empreendedores.</Text>
-              <Spacer />
-              <Button fontSize='12px' w='145px' h='62px' borderRadius='unset' bg='black' color='#fff' _hover={{ bg: '#BF2244' }}>ASSISTA O VÍDEO</Button>
-            </VStack>
-            <AspectRatio maxW='560px' w='100%' h='323px' ratio={1}>
-              <iframe
-                title='naruto'
-                src='https://www.youtube.com/embed/QhBnZ6NPOY0'
-                allowFullScreen
-              />
-            </AspectRatio>
-          </Stack>
-        </Flex>
-      </Box>
-      <Box w='full' bg='#BF2244'>
-        <Flex maxW='1120px' w='100%' py='75px' px='10px' m='auto' direction='column' align='center'>
-          <Text as='h1' color='gray.50'>
-            CONFIRA OUTRA PERSPECTIVA
-          </Text>
-
-          <Stack direction={['column', 'row']} spacing={['60px', '30px']} pt='50px' align='center'>
-            <Flex maxW='312px' w='100%' h='434px' p='25px' direction='column' align='center' bg='#fff'>
-              <Avatar size='xl' name='Christian Nwamba' src='https://bit.ly/code-beast' top='-70px' />
-              <Text as='h5' fontWeight='bold'>Camila Farani</Text>
-              <Text as='h5' >G2 Capital e Shark Tank Brasil</Text>
-              <Text as='h5' textAlign='center'>O Alfredo é um empreendedor que se destacou pela sua capacidade de execução. Ele é o sonho de qualquer investidor, um cara que se entrega para o negócio com muita intensidade e coloca muita energia no que está fazendo. Em suas palestras ele consegue transmitir essa conexão com as técnicas que ele apresenta.</Text>
-            </Flex>
-
-            <Flex maxW={['312px', '373px']} h={['434px', '494px']} p='25px' direction='column' align='center' bg='#fff'>
-              <Avatar size='xl' name='Christian Nwamba' src='https://bit.ly/code-beast' top='-70px' />
-              <Text as='h5' fontWeight='bold'>Camila Farani</Text>
-              <Text as='h5' >G2 Capital e Shark Tank Brasil</Text>
-              <Text as='h5' textAlign='center'>O Alfredo é um empreendedor fora da curva, um dos poucos que consegue liderar entregando visão, execução e venda em alto nível. É dono de uma energia única, orientado a resultados e ele gosta de desafios grandes, ponto. Nas primeiras conversas que tivemos eu tinha a certeza que o Alfredo era um pouco louco e um pouco gênio. Hoje acho que ele é muito dos dois e cada vez mais sua jornada inspira as empresas, plateias e pessoas que fazem parte no nosso ecossistema.</Text>
-            </Flex>
-
-            <Flex maxW='312px' w='100%' h='434px' p='25px' direction='column' align='center' bg='#fff'>
-              <Avatar size='xl' name='Christian Nwamba' src='https://bit.ly/code-beast' top='-70px' />
-              <Text as='h5' fontWeight='bold'>Camila Farani</Text>
-              <Text as='h5' >G2 Capital e Shark Tank Brasil</Text>
-              <Text as='h5' textAlign='center'>O Alfredo é o típico empreendedor brasileiro. Suas conquistas foram baseadas em sua competência, recursos próprios e muita, muita energia para superar todas as adversidades que surgiram pelo caminho. Além de sua competência destaco um predicado que para mim é o mais relevante: 'é um cara de valor'.</Text>
-            </Flex>
-          </Stack>
-        </Flex>
-      </Box>
-      <Box w='full' bg='#fff'>
-        <Flex maxW='1120px' w='100%' py='75px' px='10px' m='auto' direction='column' align='center'>
-          <Text as='h1' color='gray.900'>
-            CONHEÇA MEUS LIVROS
-          </Text>
-          <Text color='#333333' w='730px' textAlign='center'>
-            MAIS DE 70 MIL LIVROS VENDIDOS NOS ÚLTIMOS DOIS ANOS
-          </Text>
-
-          <Stack direction={['column', 'row']} spacing={['60px', '30px']} pt='50px' align='top'>
-            <Square w='143px' h='212px' bg='pink.500' />
-            <Flex maxW='312px' h='434px' p='25px' direction='column' align='center' bg='#fff'>
-              <Text as='h4' fontWeight='bold'>BORA VENDER: A MELHOR ESTRATÉGIA É ATITUDE</Text>
-              <Text as='h5' >Você pode não saber vender ou até não se achar vendedor. Mas, em algum momento, você já foi um. Vender deixou de ser a troca de produtos ou serviços por dinheiro e tornou-se encantamento, conquista, fidelização e alinhamento de interesses.</Text>
-              <Button w='143px' h='62px' mt='auto' mr='auto' bg='red.500' borderRadius='unset'>COMPRAR LIVRO</Button>
-            </Flex>
-            <Square w='143px' h='212px' bg='pink.500' />
-            <Flex maxW='312px' h='434px' p='25px' direction='column' align='center' bg='#fff'>
-              <Text as='h4' fontWeight='bold'>BORA VAREJO: COMO A CULTURA DE TRANSFORMAÇÃO DIGITAL AJUDOU AS EMPRESAS A ENFRENTAREM A MAIOR CRISE DO SÉCULO</Text>
-              <Text as='h5' >Durante a pandemia do Covid-19, eu convideo os maiores empresários do Brasil para discutir as principais práticas usadas durante a aceleração digital que causou a disrupção do varejo.</Text>
-              <Button w='143px' h='62px' mt='auto' mr='auto' bg='red.500' borderRadius='unset'>COMPRAR LIVRO</Button>
-            </Flex>
-          </Stack>
-        </Flex>
-      </Box>
+      <Perspectiva />
+      
+      <ConhecaMeusLivros />
 
       <Box w='full' bg='#f3f3f3'>
         <Flex maxW='1120px' w='100%' py='75px' px='10px' m='auto' direction='column' align='center'>
           <Text as='h1' color='gray.900'>
             LEIA. ASSISTA. OUÇA.
           </Text>
-          <Text color='#333333' w='730px' textAlign='center'>
+          <Text color='#333333' maxW='730px' w='100%' textAlign='center'>
             ESCOLHA O FORMATO DE CONTEÚDO E ACESSE ESTRATÉGIAS E INSIGHTS
           </Text>
 
